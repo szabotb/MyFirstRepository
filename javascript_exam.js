@@ -23,15 +23,14 @@ function fact(num) {
 }
 console.log(fact(6)); */
 
-/*6.
-We need a function named final that needs an array as a parameter. 
+/* We need a function named final that needs an array as a parameter. 
 If we do not define the parameter it should return false.
 The function has to do the following:
 -Checks the elements of the array and sorts numbers and strings longer than 3 letters
 -Add 7 to numbers (example: original array element is 3, new element is 10)
 -Turn strings to all uppercase
 The function has to return an array cleared by the actions above and the elements have to be in opposite order.
-Example: ([3, "small", null, true, "puppy", 13, "xy"]) -> [20, 'PUPPY', 'SMALL', 10])
+Example: ([3, "small", null, true, "puppy", 13, "xy"]) -> [20, 'PUPPY', 'SMALL', 10])*/
 
 function final(array) {
   if (typeof array === "undefined") {
@@ -39,22 +38,13 @@ function final(array) {
   }
   let newArray = [];
   for (let i = 0; i < array.length; i++) {
-    if (typeof array[i] === "number" || (typeof array[i] === "string" && array[i].length > 3)) {
-      newArray.push(array[i]);
+    if (typeof array[i] === "number") {
+      newArray.push(array[i] + 7);
     }
-  }
-  console.log(newArray);
-  for (let i = 0; i < newArray.length; i++) {
-    if (typeof newArray[i] === "number") {
-      newArray[i] = newArray[i] + 7;
-    }
-  }
-  console.log(newArray);
-  for (let i = 0; i < newArray.length; i++) {
-    if (typeof newArray[i] === "string") {
-      newArray[i] = newArray[i].toUpperCase();
+    if (typeof array[i] === "string" && array[i].length > 3) {
+      newArray.push(array[i].toUpperCase());
     }
   }
   return newArray.reverse();
 }
-console.log(final([3, "small", null, true, "puppy", 13, "xy"]));*/
+console.log(final([3, "small", null, true, "puppy", 13, "xy"]));
