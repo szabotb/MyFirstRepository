@@ -1,6 +1,6 @@
 /* We need a function (devidable) that has two parameters (a and b) 
 and returns if the first parameter is devidable with the second parameter or not. 
-Example: devidable(6,3) -> true ; devidable(5,3) -> false */
+Example: devidable(6,3) -> true ; devidable(5,3) -> false 
 
 function devidable(a, b) {
   if (a % b === 0) {
@@ -9,10 +9,9 @@ function devidable(a, b) {
     return false;
   }
 }
-console.log(devidable(10, 3));
+console.log(devidable(10, 3));*/
 
-/*
-We need a function (fact) that need a number as a parameter and returns the factorial of that number.
+/*We need a function (fact) that need a number as a parameter and returns the factorial of that number.
 Example: fact(5) -> 120
 
 function fact(num) {
