@@ -30,7 +30,7 @@ The function has to do the following:
 -Add 7 to numbers (example: original array element is 3, new element is 10)
 -Turn strings to all uppercase
 The function has to return an array cleared by the actions above and the elements have to be in opposite order.
-Example: ([3, "small", null, true, "puppy", 13, "xy"]) -> [20, 'PUPPY', 'SMALL', 10])*/
+Example: ([3, "small", null, true, "puppy", 13, "xy"]) -> [20, 'PUPPY', 'SMALL', 10])
 
 function final(array) {
   if (typeof array === "undefined") {
@@ -47,4 +47,4 @@ function final(array) {
   }
   return newArray.reverse();
 }
-console.log(final([3, "small", null, true, "puppy", 13, "xy"]));
+console.log(final([3, "small", null, true, "puppy", 13, "xy"])); */
