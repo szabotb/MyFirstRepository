@@ -1,15 +1,15 @@
 /* We need a function (devidable) that has two parameters (a and b) 
 and returns if the first parameter is devidable with the second parameter or not. 
-Example: devidable(6,3) -> true ; devidable(5,3) -> false 
+Example: devidable(6,3) -> true ; devidable(5,3) -> false */
 
-function devidable(num1, num2) {
-  if (num1 % num2 === 0) {
+function devidable(a, b) {
+  if (a % b === 0) {
     return true;
   } else {
     return false;
   }
 }
-console.log(devidable(10, 3)); */
+console.log(devidable(10, 3));
 
 /*
 We need a function (fact) that need a number as a parameter and returns the factorial of that number.
@@ -32,7 +32,7 @@ The function has to do the following:
 -Add 7 to numbers (example: original array element is 3, new element is 10)
 -Turn strings to all uppercase
 The function has to return an array cleared by the actions above and the elements have to be in opposite order.
-Example: ([3, "small", null, true, "puppy", 13, "xy"]) -> [20, 'PUPPY', 'SMALL', 10])*/
+Example: ([3, "small", null, true, "puppy", 13, "xy"]) -> [20, 'PUPPY', 'SMALL', 10])
 
 function final(array) {
   if (typeof array === "undefined") {
@@ -58,4 +58,4 @@ function final(array) {
   }
   return newArray.reverse();
 }
-console.log(final([3, "small", null, true, "puppy", 13, "xy"]));
+console.log(final([3, "small", null, true, "puppy", 13, "xy"]));*/
