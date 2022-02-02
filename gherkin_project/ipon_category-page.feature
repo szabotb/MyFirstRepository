@@ -2,7 +2,7 @@ Feature: Category subpages are available at iponcomp.com, where products get lis
 
     #browser used: <Google Chrome Version 97.0.4692.99>
 
-    Note: 'Gamer videocard' subpage is actually 'videocard' subpage with 'gamer' filter activated.
+    #Note: 'Gamer videocard' subpage is actually 'videocard' subpage with 'gamer' filter activated.
 
     #000
 
@@ -53,7 +53,7 @@ Feature: Category subpages are available at iponcomp.com, where products get lis
         And the list of products gets filtered according to the modified minimum price
         And a clickable filter tag appears on top of the page, under the name of the category
 
-    Test note: users can change the price manually either in the price input filed, or in the URL of the page
+    #Test note: users can change the price manually either in the price input filed, or in the URL of the page
 
 
     #003
@@ -111,8 +111,8 @@ Feature: Category subpages are available at iponcomp.com, where products get lis
         And the list of products gets filtered by the chosen date
         And multiple pickup date checkboxes are clickable
 
-    Test note: Price, manufacturer and pickup filters are available at two places: top part of the page, above product listing and on the left side of the page,
-    under the list of subcategories
+    #Test note: Price, manufacturer and pickup filters are available at two places: top part of the page, above product listing and on the left side of the page,
+    #under the list of subcategories
 
     #005
 
@@ -135,7 +135,8 @@ Feature: Category subpages are available at iponcomp.com, where products get lis
             | newest first    |
             | discount        |
 
-    Test note: Ordering options also appear in the URL, order name is in hungarian so that only hungarian order names work if I change it in the URL
+    #Test note: Ordering options also appear in the URL, order name is in hungarian so that only hungarian
+    #order names work if I change it in the URL
 
     #006
 
@@ -211,7 +212,8 @@ Feature: Category subpages are available at iponcomp.com, where products get lis
         And a 'Copy link' button with an icon showing two chainlinks should be visible
         And a 'Delete all' button with an icon showing a trashbin should be visible
 
-    Test note: Users can use the Compare checkbox at any products, but only 4 (first 4) products are shown on the compare page
+    #Test note: Users can use the Compare checkbox at any products,
+    #but only 4 (first 4) products are shown on the compare page
 
     #010
 
@@ -308,7 +310,7 @@ Feature: Category subpages are available at iponcomp.com, where products get lis
         And warranty month counter should change as the button moves
         And products should get filtered
 
-    Test note: Slider type filters work proprely, counters cannot be modified to an invalid value manually or from URL
+    #Test note: Slider type filters work proprely, counters cannot be modified to an invalid value manually or from URL
 
     #019
 
